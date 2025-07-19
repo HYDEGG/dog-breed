@@ -1,0 +1,6 @@
+# Python関連
+__pycache__/
+*.pyc
+
+# macOS用
+.DS_Store
