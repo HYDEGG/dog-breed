@@ -9,6 +9,6 @@ jobs:
           LITERAL_NULL: ${{ null }}
           LITERAL_BOOLEAN: ${{ true }}
           LITERAL_NUMBER: ${{ 1234 }}
-          LITERAL_STRING: ${{ "This is a final test" }}
+          LITERAL_STRING: ${{ 'This is a final test' }}
           LITERAL_OMIT_STRING: World
          
