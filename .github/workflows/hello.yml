@@ -4,5 +4,5 @@ jobs:
   Hello:
     runs-on: ubuntu-latest
     steps:
-      -run: echo "Hello, World!"
-      -uses: actions/checkout@v2
+      - run: echo "Hello, World!"
+      - uses: actions/checkout@v2
