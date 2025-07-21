@@ -1,0 +1,13 @@
+name: Generate Function
+on: push
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - run: printenv | grep 'FUNC_'
+        env:
+          CONTAINS_FUNC: ${{ contains('HELLO' , 'ELL') }}
+          START_WITH_FUNC: ${{ startsWith('HELLO' , 'HE') }}
+          END_WITH_FUNC: ${{ endsWith('HELLO' , 'LO') }}
+          FORMAT_FUNC: ${{ format('{0} {1}', 'Hello', 'World') }}
+          JOIN_FUNC: ${{ join(github.event.*.html_url, ',') }}
